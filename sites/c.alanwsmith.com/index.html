@@ -3,33 +3,82 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap"
+      rel="stylesheet"
+    />
     <title>c.alanwsmith.com</title>
     <style>
       body {
-        color: #eef2f2;
-        background-color: #444;
-        font-size: 1.2rem;
+        margin: 0;
+        padding: 0;
+        color: #cacfd6;
+        background-color: #03440c;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Inter', sans-serif;
+        font-weight: 900;
       }
-      nav {
-        max-width: 68ch;
-        margin: 0, auto;
+      a {
+        color: #9d5c63;
+        text-decoration: none;
+      }
+      header {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 640px;
+        margin: 0 auto;
         padding-top: 10px;
+        border-bottom: 1px solid #2e1e0f;
+        font-size: 1rem;
       }
       main {
-        max-width: 68ch;
-        margin: 0, auto;
-        padding-top: 10px;
+        flex-grow: 1;
+        width: 100%;
+        max-width: 640px;
+        margin: 0 auto;
       }
       footer {
-        max-width: 68ch;
-        margin: 0, auto;
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 640px;
+        margin: 0 auto;
+        font-size: 0.82rem;
+        padding-bottom: 6px;
+        margin-top: 10px;
+        color: #637bc7;
+        text-align: center;
+      }
+      .letter {
+        margin: 0;
+        padding: 0;
+        font-size: 60vmin;
         text-align: center;
       }
     </style>
   </head>
   <body>
-    <nav></nav>
-    <main>c.alanwsmith.com</main>
-    <footer></footer>
+    <header>
+      <a href="https://www.alanwsmith.com/">alanwsmith.com</a> -
+      <a href="https://podcast.alanwsmith.com/">podcast</a>
+    </header>
+    <main>
+      <p class="letter">c</p>
+    </main>
+    <footer>
+      made by <a href="https://twitter.com/TheIdOfAlan">alan w. smith</a><br />
+      who has a <a href="https://www.alanwsmith.com/">website</a> and a
+      <a href="https://podcast.alanwsmith.com/">podcast</a> <br />and some
+      <a href="https://links.alanwsmith.com/">other stuff</a>
+    </footer>
   </body>
+  <script>
+    function blastOff() {
+      console.log('DOM is loaded and ready for javascript stuff to be done')
+    }
+    document.addEventListener('DOMContentLoaded', blastOff)
+  </script>
 </html>

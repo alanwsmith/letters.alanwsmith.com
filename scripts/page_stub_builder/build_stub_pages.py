@@ -21,6 +21,3 @@ for letter in letters:
         _out.write(structure.substitute(letter=letter))
 
 
-
-
-
