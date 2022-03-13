@@ -6,30 +6,77 @@
     <title>Hello, World</title>
     <style>
       body {
+        margin: 0;
+        padding: 0;
         color: #eef2f2;
         background-color: #444;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+        min-height: 100vh;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
       }
-      nav {
+      header {
+        width: 100%;
         max-width: 68ch;
-        margin: 0, auto;
-        padding-top: 10px;
+        margin: 0 auto;
+        padding-top: 14px;
+        border-bottom: 1px solid #333;
       }
       main {
+        width: 100%;
         max-width: 68ch;
-        margin: 0, auto;
+        margin: 0 auto;
         padding-top: 10px;
       }
       footer {
+        width: 100%;
         max-width: 68ch;
-        margin: 0, auto;
+        margin: 0 auto;
         text-align: center;
+        padding-bottom: 14px;
+        font-size: 0.9rem;
+      }
+      a {
+        text-decoration: none;
+      }
+      .pallet1 {
+        background-color: #283618;
+        color: #dda15e;
+      }
+      .pallet1 a {
+        color: #bc6c25;
       }
     </style>
   </head>
   <body>
-    <nav></nav>
-    <main>Letters</main>
-    <footer></footer>
+    <script type="text/javascript">
+      document.body.className = 'pallet1'
+    </script>
+
+    <header>
+      <a href="https://www.alanwsmith.com/">alanwsmith.com</a> ~
+      <a href="https://links.alanwsmith.com">links</a> ~
+      <a href="https://podcast.alanwsmith.com/">podcast</a>
+    </header>
+    <main>
+      <h1>Letters</h1>
+      <p>
+        I was looking for an example of off-beat things to do with sub-domains
+        for my piece on
+        <a href="https://links.alanwsmith.com/"
+          >using sub-domains for digital gardens</a
+        >
+        and decided to make one for each letter of the alphabet.
+      </p>
+      <p>These are those sites:</p>
+      <p><a href="https://a.alanwsmith.com">a</a>, <a href="https://b.alanwsmith.com">b</a>, <a href="https://c.alanwsmith.com">c</a>, <a href="https://d.alanwsmith.com">d</a>, <a href="https://e.alanwsmith.com">e</a>, <a href="https://f.alanwsmith.com">f</a>, <a href="https://g.alanwsmith.com">g</a>, <a href="https://h.alanwsmith.com">h</a>, <a href="https://i.alanwsmith.com">i</a>, <a href="https://j.alanwsmith.com">j</a>, <a href="https://k.alanwsmith.com">k</a>, <a href="https://l.alanwsmith.com">l</a>, <a href="https://m.alanwsmith.com">m</a>, <a href="https://n.alanwsmith.com">n</a>, <a href="https://o.alanwsmith.com">o</a>, <a href="https://p.alanwsmith.com">p</a>, <a href="https://q.alanwsmith.com">q</a>, <a href="https://r.alanwsmith.com">r</a>, <a href="https://s.alanwsmith.com">s</a>, <a href="https://t.alanwsmith.com">t</a>, <a href="https://u.alanwsmith.com">u</a>, <a href="https://v.alanwsmith.com">v</a>, <a href="https://w.alanwsmith.com">w</a>, <a href="https://x.alanwsmith.com">x</a>, <a href="https://y.alanwsmith.com">y</a>, <a href="https://z.alanwsmith.com">z</a></p>
+    </main>
+    <footer>
+      made by <a href="https://twitter.com/TheIdOfAlan">alan w. smith</a>
+      <br />
+      who has a <a href="https://www.alanwsmith.com">website</a> and a
+      <a href="https://podcast.alanwsmith.com/">podcast</a> <br />
+      among other <a href="https://links.alanwsmith.com">things</a>
+    </footer>
   </body>
 </html>
